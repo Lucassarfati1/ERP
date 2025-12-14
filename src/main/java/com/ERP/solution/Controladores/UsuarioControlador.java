@@ -5,7 +5,7 @@ import com.ERP.solution.Servicios.Implementaciones.UsuarioImplementacion;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/usuarios")
+@RequestMapping("/Usuarios")
 public class UsuarioControlador {
     private final UsuarioImplementacion usuarioServicio;
     public UsuarioControlador(UsuarioImplementacion usuarioServicio){

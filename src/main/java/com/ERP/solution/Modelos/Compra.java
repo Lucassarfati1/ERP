@@ -13,7 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "Compras")
-public class Compras {
+public class Compra {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,5 +30,5 @@ public class Compras {
     private float total;
 
     @OneToMany(mappedBy = "compra")
-    private List<DetalleCompras> detalleCompras;
+    private List<DetalleCompra> detalleCompras;
 }

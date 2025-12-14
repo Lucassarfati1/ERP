@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class DetalleCompras {
+public class DetalleCompra {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
@@ -25,6 +25,6 @@ public class DetalleCompras {
             optional = false
     )
     @JoinColumn(name="CompraID")
-    private Compras compra;
+    private Compra compra;
 
 }
