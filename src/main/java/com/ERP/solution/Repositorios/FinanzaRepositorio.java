@@ -1,4 +1,7 @@
 package com.ERP.solution.Repositorios;
 
-public interface FinanzaRepositorio {
+import com.ERP.solution.Modelos.Finanzas;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface FinanzaRepositorio extends JpaRepository<Finanzas, Long> {
 }
